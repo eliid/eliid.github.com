@@ -1,72 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>eliid ~ 世界在你手中</title>
-
-		<!-- Bootstrap -->
-		<link href="bootstrap.min.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/css/bootstrap.min.css" rel="stylesheet">
-					
-		<!-- Font Awesome CSS -->
-		<link href="font-awesome.min.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/css/font-awesome/font-awesome.min.css" rel="stylesheet">
-		
-		<!-- Simple Line Icons -->
-		<link href="simple-line-icons.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/css/simple-line-icons/simple-line-icons.css" rel="stylesheet">
-		
-		<!-- google font -->
-		<link href="css-family=Open+Sans-400,700,300.css" tppabs="https://fonts.googleapis.com/css?family=Open+Sans:400,700,300" rel='stylesheet' type='text/css'>
-		
-		<!-- owl-carousel -->
-		<link href="owl.carousel.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
-		<link href="owl.theme.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
-		
-		<!-- magnific-popup -->
-		<link href="magnific-popup.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
-		
-		<!-- animate -->
-		<link href="animate.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/css/animate/animate.css" rel="stylesheet">
-		
-		<!-- style -->
-		<link href="style.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/css/style.css" rel="stylesheet">
-		
-		<!-- switcher -->
+		<title>eliid ~ 世界在你手中a </title>		
+		<link href="bootstrap.min.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/css/bootstrap.min.css" rel="stylesheet">						
+		<link href="font-awesome.min.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/css/font-awesome/font-awesome.min.css" rel="stylesheet">		
+		<link href="simple-line-icons.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/css/simple-line-icons/simple-line-icons.css" rel="stylesheet">		
+		<link href="css-family=Open+Sans-400,700,300.css" tppabs="https://fonts.googleapis.com/css?family=Open+Sans:400,700,300" rel='stylesheet' type='text/css'>		
+		<link href="owl.carousel.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">	
+		<link href="owl.theme.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/plugins/owl-carousel/owl.theme.css" rel="stylesheet">		
+		<link href="magnific-popup.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">		
+		<link href="animate.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/css/animate/animate.css" rel="stylesheet">	
+		<link href="style.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/css/style.css" rel="stylesheet">		
 		<link href="switcher.css" tppabs="http://bootstrapwizard.info/Theme/FullscreenV4/switcher/switcher.css" rel="stylesheet">
+	
+</head>
+<body class="static-background">
 		
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="html5shiv.min.js" tppabs="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		  <script src="respond.min.js" tppabs="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-	</head>
-	<body class="static-background">
 		
-		<!-- Preloader 	-->
 		<div id="preloader">
 			<div id="status">&nbsp;</div>
-		</div>
-		<!-- ./Preloader -->
-		
-		<!-- pattern -->
+		</div>	
 		<div id="bg_pattern"></div>
-		<!-- ./pattern -->
 		
-		<!-- scrollToTop -->	
 		<a href="#" class="scrollToTop">
 			<i class="fa fa-angle-up fa-2x"></i>
 		</a>
-		<!-- ./scrollToTop -->
-
-		 
-		<!-- header -->	
 		<header id="header">
 			<nav class="navbar navbar-inverse navbar-fixed-top">
 			  <div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
+			<div class="navbar-header">
 				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -708,19 +675,19 @@
 					<div class="col-md-8 col-md-offset-2">
 					
 						<!-- Working Contact Form -->
-						<form  name="sentMessage" id="contactForm" novalidate>
+						<form action="/eliid/userinfo/addUserMessageInfo"  method="post"  >
 							<div class="row">
 								<div class="control-group form-group col-sm-6">
 									<div class="controls">
 										<label>姓名</label>
-										<input type="text" class="form-control dark" id="name" placeholder="" required data-validation-required-message="Please enter your name.">
+										<input type="text" class="form-control dark" name="infoName"id="infoName" placeholder="" required data-validation-required-message="Please enter your name.">
 										<p class="help-block"></p>
 									</div>
 								</div>
 								<div class="control-group form-group col-sm-6">
 									<div class="controls">
 										<label>电子邮件</label>
-										<input type="email" class="form-control dark" id="email" placeholder="" required data-validation-required-message="Please enter your email address.">
+										<input type="email" class="form-control dark" name="infoEmil" id="email" placeholder="" required data-validation-required-message="Please enter your email address.">
 										<p class="help-block"></p>
 									</div>
 								</div>
@@ -728,7 +695,7 @@
 							<div class="control-group form-group">
 								<div class="controls">
 									<label>留言</label>
-									<textarea class="form-control dark" rows="7" id="message" placeholder="" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+									<textarea class="form-control dark" rows="7" name="infoBody" id="message" placeholder="" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
 									<p class="help-block"></p>
 								</div>
 							</div>
@@ -756,7 +723,7 @@
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<div class="contact-info">			
-									<i class="fa fa-phone"></i> (+86) 187 0118 3963
+									<i class="fa fa-phone"></i> (+86) 188 0000 8888
 								</div>
 							</div>
 						</div>
